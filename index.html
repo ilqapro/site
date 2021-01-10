@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Алмазная резка</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header_hat">
+          <div class="hat_top">
+            <div class="hat_text"><a href="/"><img src="img/logo.svg" alt="Алмазная резка"/></a>
+              <p>Мы готовы работать там, где многие сходят с дистанции.<span>1 из 7 лидеров отрасли</span></p>
+            </div>
+            <div class="hat_buttons">
+              <div class="left"><a class="mail" href="mailto:mosrezka@yandex.ru">mosrezka@yandex.ru</a><a class="phone" href="tel:+79774877432">+79057296625</a></div>
+              <div class="right">
+                <button class="call_popup doOrder" type="button" data-popup="popup_simple">Заказать звонок</button><a class="whatsapp" href="https://wa.me/79057296625" target="_blank"><img src="img/whatsapp.svg" alt="whatsapp"/></a>
+              </div>
+            </div>
+          </div>
+          <nav class="hat_bottom">
+            <ul>
+              <li><a class="link" href="/">Главная</a></li>
+              <li><a class="link" href="#company">О компании</a></li>
+              <li><a class="link" href="#prices">Прайс-лист</a></li>
+              <li><a class="link" href="#calculation">Онлайн расчет</a></li>
+              <li><a class="link" href="#why">Почему мы?</a></li>
+              <li><a class="link" href="#stages">Этапы работ</a></li>
+              <li><a class="link" href="#works">Выполненые работы</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section id="under_header">
+      <div class="container">
+        <div class="title_wrapper">
+          <div>
+            <div class="title_above">
+              <p>По Москве и области</p>
+              <p>На рынке с 2003 года</p>
+            </div>
+            <h1><span>Алмазная резка,</span>усиление проемов и демонтаж<span>любого уровня сложности!</span></h1>
+          </div>
+          <div class="company_images"><img src="img/hlti.svg" alt="hlti"/><img src="img/hg.svg" alt="hg"/></div>
+        </div>
+        <div class="offer_wrapper">
+          <div class="offer_pluses">
+            <div class="offer_pluses_item"><img src="img/offer_icon1.svg" alt="offer_icon1"/>
+              <p>Сдадим объект в срок или выплатим неустойку в размере 2% от суммы договора</p>
+            </div>
+            <div class="offer_pluses_item"><img src="img/offer_icon2.svg" alt="offer_icon2"/>
+              <p>Работаем по договору с фиксированием цены, которые не изменяться в процессе работы</p>
+            </div>
+            <div class="offer_pluses_item"><img src="img/offer_icon3.svg" alt="offer_icon3"/>
+              <p>Работаем с частными и промышлеными обьектами</p>
+            </div>
+            <div class="offer_pluses_item"><img src="img/offer_icon4.svg" alt="offer_icon4"/>
+              <p>Выезд и оценка = 0 руб</p>
+            </div>
+            <div class="offer_pluses_item"><img src="img/offer_icon5.svg" alt="offer_icon5"/>
+              <p>Без предоплаты</p>
+            </div>
+            <div class="offer_pluses_item"><img src="img/offer_icon6.svg" alt="offer_icon6"/>
+              <p>Допуски CRO</p>
+            </div>
+          </div>
+          <form class="offer_form">
+            <div class="form_hat">
+              <p class="title">Оставьте заявку</p>
+              <p class="text">мы свяжемся с Вами в течении 5 минути расчитаем выгодную для Вас цену.</p>
+              <div class="choose_facetype">
+                <input type="radio" name="face_type" require="require" value="Физическое лицо" id="ft_1" checked="checked"/>
+                <label for="ft_1">Физическое лицо</label>
+                <input type="radio" name="face_type" require="require" value="Юридическое лицо" id="ft_2"/>
+                <label for="ft_2">Юридическое лицо</label>
+              </div>
+            </div>
+            <input class="input" type="text" name="name" require="require" placeholder="Имя"/>
+            <input class="input" type="tel" name="phone" require="require" placeholder="Телефон"/>
+            <input class="button" type="submit" value="Свяжитесь со мной"/>
+          </form>
+        </div>
+        <div class="under_offer">
+          <div class="under_offer_item">
+            <div><img src="img/under_pluses_image1.png" alt="under_pluses_image1"/></div>
+            <p class="title">Работаем с соблюдением всех правил и СНиП</p>
+            <p class="text">Работаем строго по СНиП 3.03.01-87 «Несущие и ограждающие конструкции»</p>
+          </div>
+          <div class="under_offer_item">
+            <div><img src="img/under_pluses_image2.png" alt="under_pluses_image2"/></div>
+            <p class="title">Ценим каждого клиента, независимо от объема заказа</p>
+            <p class="text">Мы ценим каждого клиента, независимо от объема работ, и одинаково внимательно подходим к каждому заказу</p>
+          </div>
+          <div class="under_offer_item">
+            <div><img src="img/under_pluses_image3.png" alt="under_pluses_image3"/></div>
+            <p class="title">Оборудование от мировых ведущих производителей</p>
+            <p class="text">Работаем только на высококачественном и мощном, современном оборудовании марок Hilti и Stihl</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="company">
+      <div class="container">
+        <h3>Мы изучили более 40 сайтов по алмазному бурению и с увероностью можем сказать <span>что предоставим Вам цены на 5-20 % ниже конкурентов.</span></h3>
+        <div class="company_wrapper">
+          <div class="company_slider">
+            <div class="company_slider_info"><img class="img_active" src="img/company_photo.png" alt="company_photo"/>
+              <div class="sliderarrows"><img class="arrow_left" src="img/slider_arrow.svg" alt="arrow_left"/><img class="arrow_right" src="img/slider_arrow.svg" alt="arrow_right"/></div>
+              <div class="slider_navigation"></div>
+            </div>
+            <div class="photos"><span data-image_src="img/company_photo.png" data-photo_id="0"></span><span data-image_src="img/team_item1.png" data-photo_id="1"></span><span data-image_src="img/team_item2.png" data-photo_id="2"></span><span data-image_src="img/team_item3.png" data-photo_id="3"></span><span data-image_src="img/team_item4.png" data-photo_id="4"></span>
+            </div>
+          </div>
+          <div class="company_info">
+            <div class="top">
+              <p class="title">О компании</p>
+              <p class="text">Работаем только на высококачественном и мощном, современном оборудовании марок Hilti и Stihl Мы ценим каждого клиента, независимо от объема работ, и одинаково внимательно подходим к каждому заказу. Работаем только на высококачественном и мощном, современном оборудовании марок Hilti и Stihl Мы ценим каждого клиента, независимо от объема работ, и одинаково внимательно подходим к каждому заказу</p>
+            </div>
+            <div class="bottom">
+              <button class="button call_popup" type="button" data-popup="popup_simple">Начать сотрудничество</button><a href="mailto:mosrezka@yandex.ru">mosrezka@yandex.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team">
+      <div class="container">
+        <div class="section_info">
+          <h3>Наша команда состоит из специалистов с высшим строительным образованием. </h3>
+          <p>
+            В штате нашей компании работают не только производственники, 
+            но и конструктор-проектировщик а так же аттестованный специалист 
+            в области обследования зданий и сооружений.
+            
+          </p>
+        </div>
+        <div class="team_wrapper">
+          <div class="team_item"><img src="img/team_item1.png" alt="Олег"/>
+            <div>
+              <p class="name">Олег</p>
+              <p class="experience">5 лет</p>
+            </div><a href="#">Посмотреть диплом<br>и удостоверения</a>
+          </div>
+          <div class="team_item"><img src="img/team_item2.png" alt="Василий"/>
+            <div>
+              <p class="name">Василий</p>
+              <p class="experience">5 лет</p>
+            </div><a href="#">Посмотреть диплом<br>и удостоверения</a>
+          </div>
+          <div class="team_item"><img src="img/team_item3.png" alt="Денис"/>
+            <div>
+              <p class="name">Денис</p>
+              <p class="experience">5 лет</p>
+            </div><a href="#">Посмотреть диплом<br>и удостоверения</a>
+          </div>
+          <div class="team_item"><img src="img/team_item4.png" alt="Евгений"/>
+            <div>
+              <p class="name">Евгений</p>
+              <p class="experience">5 лет</p>
+            </div><a href="#">Посмотреть диплом<br>и удостоверения</a>
+          </div>
+        </div>
+        <div class="calculation" id="calculation">
+          <h2>Онлайн калькулятор расчета стоимости</h2>
+          <p>Узнайте точную стоимость онлайн и получите дополнительную скидку 5%</p>
+          <button class="call_popup" data-popup="popup_quiz"><img src="img/calc.svg" alt="calc"/>Расчитать стоимость</button>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="container">
+        <div class="section_hat">
+          <div class="section_info">
+            <h3>Наши услуги</h3>
+            <p>Ниже представлены наиболее востребованные услуги по алмазной резке, если Вы не нашли нужную для себя услугу.</p>
+          </div>
+          <div class="section_offer">
+            <p>Оставьте заявку или наберите нам по номеру:</p><a href="tel:+79057296625">+79057296625</a>
+            <p>Мы осуществляем услуги по Резке, усилению, демонтажу — любого уровня сложности.</p>
+          </div>
+        </div>
+        <div class="services_items">
+                  <div class="service_item_wrapper">
+                    <p class="title">Алмазная резка конструкции
+                      <div class="service_item_content">
+                        <p class="item_title">Резка стен</p>
+                        <div class="links"><a class="more call_popup" data-popup="popup_info" data-title="Резка стен" data-image_src="img/services/Резка стен.jpg">Подробнее</a><a class="contact call_popup" data-popup="popup_simple">Связаться</a></div>
+                      </div>
+                      <div class="service_item_content">
+                        <p class="item_title">Алмазное штробление</p>
+                        <div class="links"><a class="more call_popup" data-popup="popup_info" data-title="Алмазное штробление" data-image_src="img/services/Алмазное штробление.jpg">Подробнее</a><a class="contact call_popup" data-popup="popup_simple">Связаться</a></div>
+                      </div>
+                      <div class="service_item_content">
+                        <p class="item_title">Резка перекрытий</p>
+                        <div class="links"><a class="more call_popup" data-popup="popup_info" data-title="Резка перекрытий" data-image_src="img/services/Резка перекрытий.jpg">Подробнее</a><a class="contact call_popup" data-popup="popup_simple">Связаться</a></div>
+                      </div>
+                      <div class="service_item_content">
+                        <p class="item_title">Резка железобетона</p>
+                        <div class="links"><a class="more call_popup" data-popup="popup_info" data-title="Резка железобетона" data-image_src="img/services/Резка железобетона.jpg">Подробнее</a><a class="contact call_popup" data-popup="popup_simple">Связаться</a></div>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="service_item_wrapper">
+                    <p class="title">Резка проемов
+                      <div class="service_item_content">
+                        <p class="item_title">Резка проёмов</p>
+                        <div class="links"><a class="more call_popup" data-popup="popup_info" data-title="Резка проёмов" data-image_src="img/services/Резка проёмов.jpg">Подробнее</a><a class="contact call_popup" data-popup="popup_simple">Связаться</a></div>
+                      </div>
+                      <div class="service_item_content">
+                        <p class="item_title">Усиление проёмов</p>
+                        <div class="links"><a class="more call_popup" data-popup="popup_info" data-title="Усиление проёмов" data-image_src="img/services/Усиление проёмов.jpg">Подробнее</a><a class="contact call_popup" data-popup="popup_simple">Связаться</a></div>
+                      </div>
+                      <div class="service_item_content">
+                        <p class="item_title">Расширение проёмов</p>
+                        <div class="links"><a class="more call_popup" data-popup="popup_info" data-title="Расширение проёмов" data-image_src="img/services/Расширение проёмов.jpg">Подробнее</a><a class="contact call_popup" data-popup="popup_simple">Связаться</a></div>
+                      </div>
+                      <div class="service_item_content">
+                        <p class="item_title">Проёмы в перекрытии</p>
+                        <div class="links"><a class="more call_popup" data-popup="popup_info" data-title="Проёмы в перекрытии" data-image_src="img/services/Проёмы в перекрытии.jpg">Подробнее</a><a class="contact call_popup" data-popup="popup_simple">Связаться</a></div>
+                      </div>
+                    </p>
+                  </div>
+        </div>
+        <div class="services_items">
+                  <div class="service_item_wrapper">
+                    <p class="title">Резка отверстий
+                      <div class="service_item_content">
+                        <p class="item_title">Бурение с водой</p>
+                        <div class="links"><a class="more call_popup" data-popup="popup_info" data-title="Бурение с водой" data-image_src="img/services/Бурение с водой.jpg">Подробнее</a><a class="contact call_popup" data-popup="popup_simple">Связаться</a></div>
+                      </div>
+                      <div class="service_item_content">
+                        <p class="item_title">Сухое бурение</p>
+                        <div class="links"><a class="more call_popup" data-popup="popup_info" data-title="Сухое бурение" data-image_src="img/services/Сухое бурение.jpg">Подробнее</a><a class="contact call_popup" data-popup="popup_simple">Связаться</a></div>
+                      </div>
+                      <div class="service_item_content">
+                        <p class="item_title">Бурение в потолок</p>
+                        <div class="links"><a class="more call_popup" data-popup="popup_info" data-title="Бурение в потолок" data-image_src="img/services/Бурение в потолок.jpg">Подробнее</a><a class="contact call_popup" data-popup="popup_simple">Связаться</a></div>
+                      </div>
+                      <div class="service_item_content">
+                        <p class="item_title">Бурение фундамента</p>
+                        <div class="links"><a class="more call_popup" data-popup="popup_info" data-title="Бурение фундамента" data-image_src="img/services/Бурение фундамента.jpg">Подробнее</a><a class="contact call_popup" data-popup="popup_simple">Связаться</a></div>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="service_item_wrapper">
+                    <p class="title">Резка проемов
+                      <div class="service_item_content">
+                        <p class="item_title">Демонтаж подоконного блока</p>
+                        <div class="links"><a class="more call_popup" data-popup="popup_info" data-title="Демонтаж подоконного блока" data-image_src="img/services/Демонтаж подоконного блока.jpg">Подробнее</a><a class="contact call_popup" data-popup="popup_simple">Связаться</a></div>
+                      </div>
+                      <div class="service_item_content">
+                        <p class="item_title">Демонтаж сантехнических кабин</p>
+                        <div class="links"><a class="more call_popup" data-popup="popup_info" data-title="Демонтаж сантехнических кабин" data-image_src="img/services/Демонтаж сантехнических кабин.jpg">Подробнее</a><a class="contact call_popup" data-popup="popup_simple">Связаться</a></div>
+                      </div>
+                      <div class="service_item_content">
+                        <p class="item_title">Демонтаж стен и перегородок</p>
+                        <div class="links"><a class="more call_popup" data-popup="popup_info" data-title="Демонтаж стен и перегородок" data-image_src="img/services/Демонтаж стен и перегородок.jpg">Подробнее</a><a class="contact call_popup" data-popup="popup_simple">Связаться</a></div>
+                      </div>
+                      <div class="service_item_content">
+                        <p class="item_title">Демонтаж бетонных перекрытий</p>
+                        <div class="links"><a class="more call_popup" data-popup="popup_info" data-title="Демонтаж бетонных перекрытий" data-image_src="img/services/Демонтаж бетонных перекрытий.jpg">Подробнее</a><a class="contact call_popup" data-popup="popup_simple">Связаться</a></div>
+                      </div>
+                    </p>
+                  </div>
+        </div>
+      </div>
+    </section>
+    <section id="prices">
+      <div class="container">
+        <div class="section_hat">
+          <div class="section_info">
+            <h2>Прайс-лист на услуги</h2>
+            <p> <span>Позвоните нам по номеру: <a href="tel:+79057296625">+79057296625</a></span>Мы осуществляем услуги по Резке, усилению, демонтажу — любого уровня сложности.</p>
+          </div>
+          <div class="section_buttons">
+            <button class="active" type="button" data-table="price_table0">Общие цены</button>
+            <button type="button" data-table="price_table1">Стандартные проемы</button>
+            <button type="button" data-table="price_table2">Повышающие кофицнты</button>
+          </div>
+        </div>
+                <table class="price_table price_table0 active" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <td>Толщина</td>
+                      <td>Монолит</td>
+                      <td>Бетон</td>
+                      <td>Кирпич</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>80 мм</td>
+                      <td>900 ₽</td>
+                      <td>800 ₽</td>
+                      <td>600 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>100 мм</td>
+                      <td>1000 ₽</td>
+                      <td>900 ₽</td>
+                      <td>700 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>120 мм</td>
+                      <td>1100 ₽</td>
+                      <td>1000 ₽</td>
+                      <td>800 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>140 мм</td>
+                      <td>1200 ₽</td>
+                      <td>1100 ₽</td>
+                      <td>900 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>160 мм</td>
+                      <td>1400 ₽</td>
+                      <td>1200 ₽</td>
+                      <td>1000 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>180 мм</td>
+                      <td>1600 ₽</td>
+                      <td>1400 ₽</td>
+                      <td>1100 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>200 мм</td>
+                      <td>1800 ₽</td>
+                      <td>1600 ₽</td>
+                      <td>1200 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>220 мм</td>
+                      <td>2000 ₽</td>
+                      <td>1800 ₽</td>
+                      <td>1300 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>240 мм</td>
+                      <td>2200 ₽</td>
+                      <td>2000 ₽</td>
+                      <td>1400 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>260 мм</td>
+                      <td>2400 ₽</td>
+                      <td>2200 ₽</td>
+                      <td>1600 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>280 мм</td>
+                      <td>2600 ₽</td>
+                      <td>2400 ₽</td>
+                      <td>1800 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>300 мм</td>
+                      <td>2800 ₽</td>
+                      <td>2600 ₽</td>
+                      <td>2000 ₽</td>
+                    </tr>
+                    <tr>
+                      <td colspan="4">Метр погонный / руб.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="price_table price_table1" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <td>Толщина стены</td>
+                      <td>Бетон</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10 см.</td>
+                      <td>10 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>11 см.</td>
+                      <td>11 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>12 см.</td>
+                      <td>12 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>13 см.</td>
+                      <td>13 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>14 см.</td>
+                      <td>14 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>15 см.</td>
+                      <td>15 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>16 см.</td>
+                      <td>16 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>17 см.</td>
+                      <td>17 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>18 см.</td>
+                      <td>18 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>19 см.</td>
+                      <td>19 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>20 см.</td>
+                      <td>20 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>21 см.</td>
+                      <td>21 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>22 см.</td>
+                      <td>22 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>23 см.</td>
+                      <td>23 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>24 см.</td>
+                      <td>24 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>25 см.</td>
+                      <td>25 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>26 см.</td>
+                      <td>26 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>27 см.</td>
+                      <td>27 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>28 см.</td>
+                      <td>28 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>29 см.</td>
+                      <td>29 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>30 см.</td>
+                      <td>30 000 руб.</td>
+                    </tr>
+                    <tr>
+                      <td colspan="4">Метр погонный / руб.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="price_table price_table2" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <td>Толщина (мм)</td>
+                      <td>Бетон</td>
+                      <td>Кирпич</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>до 100</td>
+                      <td>800</td>
+                      <td>600</td>
+                    </tr>
+                    <tr>
+                      <td>до 150</td>
+                      <td>1100</td>
+                      <td>800</td>
+                    </tr>
+                    <tr>
+                      <td>до 200</td>
+                      <td>1600</td>
+                      <td>1100</td>
+                    </tr>
+                    <tr>
+                      <td>до 250</td>
+                      <td>2100</td>
+                      <td>1400</td>
+                    </tr>
+                    <tr>
+                      <td>до 300</td>
+                      <td>2600</td>
+                      <td>1600</td>
+                    </tr>
+                    <tr>
+                      <td>до 350</td>
+                      <td>3000</td>
+                      <td>1800</td>
+                    </tr>
+                    <tr>
+                      <td>до 400</td>
+                      <td>3300</td>
+                      <td>2000</td>
+                    </tr>
+                    <tr>
+                      <td>до 500</td>
+                      <td>4000</td>
+                      <td>2500</td>
+                    </tr>
+                    <tr>
+                      <td>до 600</td>
+                      <td>4800</td>
+                      <td>3000</td>
+                    </tr>
+                    <tr>
+                      <td colspan="4">Метр погонный / руб.</td>
+                    </tr>
+                  </tbody>
+                </table>
+      </div>
+    </section>
+    <section id="offer2">
+      <div class="container">
+        <div class="offer2_wrapper">
+          <form class="offer_form">
+            <div class="form_hat">
+              <p class="title">Нашли цену дешевле?</p>
+              <p class="text">Оставьте заявку или пришлите проект, просчитаем выгоднее</p>
+            </div>
+            <input class="input" type="text" name="name" require="require" placeholder="Имя"/>
+            <input class="input" type="tel" name="phone" require="require" placeholder="Телефон"/>
+            <input type="file" name="file" id="input_file" multiple="multiple"/>
+            <label class="input_file" for="input_file"><span>Выберите файл</span></label>
+            <input class="button" type="submit" value="Отправить"/>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="why">
+      <div class="container">
+        <div class="why_hat">
+          <h2 class="why_title">Почему стоит выбрать именно «Мос-резка.рф» ?</h2>
+          <div class="hat_buttons">
+            <div class="left"><a class="phone" href="tel:+79057296625">+79057296625</a></div>
+            <div class="right">
+              <button class="call_popup doOrder" type="button" data-popup="popup_simple">Заказать звонок</button><a class="whatsapp" href="https://wa.me/79057296625" target="_blank"><img src="img/whatsapp.svg" alt="whatsapp"/></a>
+            </div>
+          </div>
+        </div>
+        <table class="why_table">
+          <tbody>
+            <tr class="first">
+              <td></td>
+              <td>Бур строй</td>
+              <td>Физическое лицо</td>
+              <td>Организация</td>
+            </tr>
+            <tr>
+              <td>Цены</td>
+              <td>Низкие цены как у частника</td>
+              <td>Низкие цены</td>
+              <td>Завышенные цены</td>
+            </tr>
+            <tr>
+              <td>Надежность</td>
+              <td>На строительном рынке уже с 2003 года. <span>Проверьте нашу организацию сами ИНН: 5803010446</span></td>
+              <td>Недолнная работа, срыв сроков, поломка оборудований</td>
+              <td>Зависит от организации, избегайте фирм однодневок.</td>
+            </tr>
+            <tr>
+              <td>Оборудовние</td>
+              <td>Есть все необхадимое оборудование и расходники.</td>
+              <td>Из-за нехватки расходников, поломки оборудовний, увелечение сроков</td>
+              <td>Есть все необхадимое оборудование и расходники.</td>
+            </tr>
+            <tr>
+              <td>Сроки</td>
+              <td>За срыв сроков — 0,2 от суммы договора</td>
+              <td>Нет ответсвенности</td>
+              <td>Нет ответсвенности</td>
+            </tr>
+            <tr>
+              <td colspan="5">
+                <button class="button call_popup" type="button" data-popup="popup_question">Получить консультацию</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="stages">
+      <div class="container">
+        <div class="section_info">
+          <h3>Этапы работ</h3>
+          <p>Работаем с физическими и юридическими лицами<span>С Физ лицами договора составляется по желанию</span></p>
+        </div>
+        <div class="stages_wrapper">
+          <div class="stages_item">
+            <div class="top">
+              <p class="number">1</p>
+              <p class="title">Консультация<br>по телефону
+              </p>
+            </div>
+            <div class="bottom">
+              <div class="text">Выявление деталей и нюансов при работе</div>
+            </div>
+          </div>
+          <div class="stages_item">
+            <div class="top">
+              <p class="number">2</p>
+              <p class="title">Расчет стоимости<br>и сроков
+              </p>
+            </div>
+            <div class="bottom">
+              <div class="text">Расчет онлайн или выезд на замер и осмечивание обьемов работ</div>
+            </div>
+          </div>
+          <div class="stages_item">
+            <div class="top">
+              <p class="number">3</p>
+              <p class="title">Завоз оборудования<span>Предоставление Аванса (Выписка счета)</span>
+              </p>
+            </div>
+            <div class="bottom">
+              <div class="text">1. Завозим, подключаем, проверяем оборудование.<br>2 получаем аванс</div>
+            </div>
+          </div>
+          <div class="stages_item">
+            <div class="top">
+              <p class="number">4</p>
+              <p class="title">Выполнение работ
+              </p>
+            </div>
+            <div class="bottom">
+              <div class="text">Закрытие обьемов работ, подписание актов выполненных работ</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="works">
+      <div class="container">
+        <div class="section_info">
+          <h3>Выполненные работы</h3>
+        </div>
+        <div class="works_slider">
+          <div class="works_photos">
+            <div class="active" data-id="0" data-for="11_ООО “Газпром”" data-address="г.Мытищи, Московская область" data-time="1 день" data-comment="Данный проект был сдан точно в срок, без задержек. Ключевой момент для заказчика был - сроки. После данного проекта был подписан договор на утепление еще 2 Ангаров" data-image_src="img/works_item1.png"><img src="img/works_item1.png" alt="works_item1"/></div>
+            <div data-id="1" data-for="22_ООО “Газпром”" data-address="г.Мытищи, Московская область" data-time="1 день" data-comment="Данный проект был сдан точно в срок, без задержек. Ключевой момент для заказчика был - сроки. После данного проекта был подписан договор на утепление еще 2 Ангаров" data-image_src="img/works_item2.png"><img src="img/works_item2.png" alt="works_item2"/></div>
+            <div data-id="2" data-for="33_ООО “Газпром”" data-address="г.Мытищи, Московская область" data-time="1 день" data-comment="Данный проект был сдан точно в срок, без задержек. Ключевой момент для заказчика был - сроки. После данного проекта был подписан договор на утепление еще 2 Ангаров" data-image_src="img/works_item3.png"><img src="img/works_item3.png" alt="works_item3"/></div>
+            <div data-id="3" data-for="44_ООО “Газпром”" data-address="г.Мытищи, Московская область" data-time="1 день" data-comment="Данный проект был сдан точно в срок, без задержек. Ключевой момент для заказчика был - сроки. После данного проекта был подписан договор на утепление еще 2 Ангаров" data-image_src="img/works_item4.png"><img src="img/works_item4.png" alt="works_item4"/></div>
+            <div data-id="4" data-for="55_ООО “Газпром”" data-address="г.Мытищи, Московская область" data-time="1 день" data-comment="Данный проект был сдан точно в срок, без задержек. Ключевой момент для заказчика был - сроки. После данного проекта был подписан договор на утепление еще 2 Ангаров" data-image_src="img/works_item5.png"><img src="img/works_item5.png" alt="works_item5"/></div>
+            <div data-id="5" data-for="66_ООО “Газпром”" data-address="г.Мытищи, Московская область" data-time="1 день" data-comment="Данный проект был сдан точно в срок, без задержек. Ключевой момент для заказчика был - сроки. После данного проекта был подписан договор на утепление еще 2 Ангаров" data-image_src="img/works_item6.png"><img src="img/works_item6.png" alt="works_item6"/></div>
+            <div data-id="6" data-for="66_ООО “Газпром”" data-address="г.Мытищи, Московская область" data-time="1 день" data-comment="Данный проект был сдан точно в срок, без задержек. Ключевой момент для заказчика был - сроки. После данного проекта был подписан договор на утепление еще 2 Ангаров" data-image_src="img/works_item7.png"><img src="img/works_item7.png" alt="works_item7"/></div>
+            <div data-id="7" data-for="66_ООО “Газпром”" data-address="г.Мытищи, Московская область" data-time="1 день" data-comment="Данный проект был сдан точно в срок, без задержек. Ключевой момент для заказчика был - сроки. После данного проекта был подписан договор на утепление еще 2 Ангаров" data-image_src="img/works_item8.png"><img src="img/works_item8.png" alt="works_item8"/></div>
+            <div data-id="8" data-for="66_ООО “Газпром”" data-address="г.Мытищи, Московская область" data-time="1 день" data-comment="Данный проект был сдан точно в срок, без задержек. Ключевой момент для заказчика был - сроки. После данного проекта был подписан договор на утепление еще 2 Ангаров" data-image_src="img/works_item9.png"><img src="img/works_item9.png" alt="works_item9"/></div>
+            <div data-id="9" data-for="66_ООО “Газпром”" data-address="г.Мытищи, Московская область" data-time="1 день" data-comment="Данный проект был сдан точно в срок, без задержек. Ключевой момент для заказчика был - сроки. После данного проекта был подписан договор на утепление еще 2 Ангаров" data-image_src="img/works_item10.png"><img src="img/works_item10.png" alt="works_item10"/></div>
+            <div data-id="10" data-for="66_ООО “Газпром”" data-address="г.Мытищи, Московская область" data-time="1 день" data-comment="Данный проект был сдан точно в срок, без задержек. Ключевой момент для заказчика был - сроки. После данного проекта был подписан договор на утепление еще 2 Ангаров" data-image_src="img/works_item11.png"><img src="img/works_item11.png" alt="works_item11"/></div>
+            <div data-id="11" data-for="66_ООО “Газпром”" data-address="г.Мытищи, Московская область" data-time="1 день" data-comment="Данный проект был сдан точно в срок, без задержек. Ключевой момент для заказчика был - сроки. После данного проекта был подписан договор на утепление еще 2 Ангаров" data-image_src="img/works_item12.png"><img src="img/works_item12.png" alt="works_item12"/></div>
+            <div data-id="12" data-for="66_ООО “Газпром”" data-address="г.Мытищи, Московская область" data-time="1 день" data-comment="Данный проект был сдан точно в срок, без задержек. Ключевой момент для заказчика был - сроки. После данного проекта был подписан договор на утепление еще 2 Ангаров" data-image_src="img/works_item13.png"><img src="img/works_item13.png" alt="works_item13"/></div>
+            <div data-id="13" data-for="66_ООО “Газпром”" data-address="г.Мытищи, Московская область" data-time="1 день" data-comment="Данный проект был сдан точно в срок, без задержек. Ключевой момент для заказчика был - сроки. После данного проекта был подписан договор на утепление еще 2 Ангаров" data-image_src="img/works_item14.png"><img src="img/works_item14.png" alt="works_item14"/></div>
+            <div data-id="14" data-for="66_ООО “Газпром”" data-address="г.Мытищи, Московская область" data-time="1 день" data-comment="Данный проект был сдан точно в срок, без задержек. Ключевой момент для заказчика был - сроки. После данного проекта был подписан договор на утепление еще 2 Ангаров" data-image_src="img/works_item15.png"><img src="img/works_item15.png" alt="works_item15"/></div>
+          </div>
+          <div class="works_slider_inner">
+            <div class="works_single_slide"><img class="works_single_img" src="img/works_item1.png" alt="works_item1"/>
+              <div class="sliderarrows"><img class="arrow_left" src="img/slider_arrow.svg" alt="arrow_left"/><img class="arrow_right" src="img/slider_arrow.svg" alt="arrow_right"/></div>
+            </div>
+            <div class="works_slider_content">
+              <div>
+                <p class="for">Проект для: <span>11_ООО “Газпром”</span></p>
+                <p class="address">Адрес: <span>г.Мытищи, Московская область</span></p>
+                <p class="time">Сроки выполнения: <span>1 день</span></p>
+                <p>Комментарий: </p>
+                <p class="comment">Данный проект был сдан точно в срок, без задержек. Ключевой момент для заказчика был - сроки. После данного проекта был подписан договор на утепление еще 2 Ангаров</p>
+              </div>
+              <button class="button call_popup" type="button" data-popup="popup_simple">Начать сотрудничество</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+        <div class="section_info">
+          <h2>Часто задаваемые вопросы</h2>
+        </div>
+        <div class="faq_wrapper">
+          <div class="faq_item active">
+            <div>
+              <p>1. По какой причине цены на услугу алмазной резки такие высокие?</p><img src="img/arrow.svg" alt="arrow"/>
+            </div>
+            <p class="answer">Так как алмазная резка в первую очередь характеризуется точностью размеров, скоростью и качеством работы – цены на оборудование и на расходные материалы гораздо выше, чем при других методах. Именно поэтому и цены на услуги немного выше, чем при других методах работы. Но Цена = Качество</p>
+          </div>
+          <div class="faq_item">
+            <div>
+              <p>2. Какие виды алмазной резки существуют?</p><img src="img/arrow.svg" alt="arrow"/>
+            </div>
+            <p class="answer">Наиболее популярные методы алмазной резки это:<br>-резка ручными резчиками (применяется при слабом и среднем армировании);<br>-резка стенорезными машинами (применяется при сильном армировании и при толщине ≥ 25см)</p>
+          </div>
+          <div class="faq_item">
+            <div>
+              <p>3. Почему я должен обратиться именно к вам?</p><img src="img/arrow.svg" alt="arrow"/>
+            </div>
+            <p class="answer">У нашей компании есть ряд преимуществ, за счёт которых мы можем давать заказчику цену на 10-15 % ниже рыночной: собственное оборудование, собственный штат сотрудников, собственный транспорт, большой оборотный капитал, опыт в сфере с 2003 г</p>
+          </div>
+          <div class="faq_item">
+            <div>
+              <p>4. Вы работаете только по Москве?</p><img src="img/arrow.svg" alt="arrow"/>
+            </div>
+            <p class="answer">Нет, наши бригады также выезжают практически во все города Московской области</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="info">
+      <div class="container">
+        <div class="info_wrapper">
+          <div class="info_inner">
+            <div class="info_text">
+              <h3>О компании</h3>
+              <p>Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке дальнейших направлений развития. Равным образом постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет очевидна, что постоянное информационно-пропагандистское обеспечение нашей</p>
+            </div>
+            <div class="info_block"><img src="img/info_photo.png" alt="info_photo"/></div>
+          </div>
+          <div class="map"><img src="img/map_desktop.png" alt="map_desktop"/>
+            <form class="offer_form">
+              <div class="form_hat">
+                <p class="title">Мы подробно рассказали<br>Вам о нашей компании</p>
+                <p class="text">Теперь  Вы расскажите о Ваших задачах</p>
+              </div>
+              <input class="input" type="text" name="name" require="require" placeholder="Имя"/>
+              <input class="input" type="tel" name="phone" require="require" placeholder="Телефон"/>
+              <input class="button" type="submit" value="Свяжитесь со мной"/>
+              <p class="comfirm">Даю согласие на обработку своих персональных данных в соответствии с законом</p>
+              <div class="under_form">
+                <p class="left">
+                  Мы работаем каждый день
+                  <br>Время работы: 8:00 – 22:00  
+                  <br>Адрес: г.Москва,
+                  <br>3 - добрынинский переулок 5/9
+                </p>
+                <p class="right">
+                  ИНН: 5803010446 
+                  <br>ОГРН: 1025800548927
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer_wrapper">
+          <div class="site_info"><a href="/"><img src="img/logo_white.svg" alt="logo_white"/></a>
+            <p>
+              Мы готовы работать там, 
+              где многие сходят с дистанции.
+              <span>1 из 7 лидеров отрасли</span>
+            </p>
+          </div>
+          <div class="menu_part1">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Прайс-лист</a></li>
+              <li><a href="#">Онлайн расчет</a></li>
+            </ul>
+          </div>
+          <div class="menu_part2">
+            <ul>
+              <li><a href="#">Почему мы?</a></li>
+              <li><a href="#">Этапы работ</a></li>
+              <li><a href="#">Выполненые работы</a></li>
+            </ul>
+          </div>
+          <div class="footer_buttons"><a class="phone" href="tel:+79057296625">+79057296625</a><a class="mail" href="mailto:mosrezka@yandex.ru">mosrezka@yandex.ru</a>
+            <div class="buttons">
+              <button class="button call_popup" type="button" data-popup="popup_simple">Заказать звонок</button><a href="https://wa.me/79057296625" target="_blank"><img src="img/whatsapp.svg" alt="whatsapp"/></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer_under">
+          <p>2021 © Все права защищены</p>
+        </div>
+      </div>
+    </footer>
+    <div class="popups">
+      <div class="popups_wrapper">
+        <div class="popups_bg"></div>
+        <div class="popup_simple popup">
+          <div class="popup_simple_wrapper"><img class="x" src="img/x.svg" alt="x"/>
+            <div class="image"><img src="img/image_asd.png" alt="image_asd"/></div>
+            <div class="content">
+              <p class="title">Оставьте свои контакты</p>
+              <p>Мы свяжемся с Вами в течении 5 минут</p>
+              <form class="popup_simple_form">
+                <input class="input" type="text" placeholder="Имя"/>
+                <input class="input" type="text" placeholder="Телефон"/>
+                <input class="button" type="submit" value="Отправить"/>
+              </form>
+              <p class="small">Даю согласие на обработку своих персональных<br>данных в соответствии с законом</p>
+            </div>
+          </div>
+        </div>
+        <div class="popup_question popup"><img class="x" src="img/x.svg" alt="x"/>
+          <div class="content">
+            <p class="title">Напишите свой вопрос, мы свяжемся<br>с Вами в удобное время и ответим на него</p>
+            <form class="popup_question_form">
+              <div class="top">
+                <div>
+                  <input class="input" type="text" placeholder="Имя"/>
+                  <input class="input" type="text" placeholder="Телефон"/>
+                </div>
+                <textarea class="textarea" type="textarea" placeholder="Сообщение"></textarea>
+              </div>
+              <div class="bottom">
+                <input class="button" type="submit" value="Отправить"/>
+                <p class="small">Даю согласие на обработку своих персональных<br>данных в соответствии с законом</p>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="popup_quiz popup"><img class="x" src="img/x.svg" alt="x"/>
+          <div class="hat">
+            <p class="title">Узнайте точно стоимость онлайн<br>и получите дополнительную скидку 5%</p>
+            <div class="loader"><img src="img/loader.svg" alt="loader"/>
+              <p class="small">Подождите, мы обрабатываем<br>данные для расчета</p>
+            </div>
+          </div>
+          <form class="content">
+            <div class="process_info"><span></span></div>
+            <div class="questions">
+              <div class="question_item question_item0 active">
+                <p class="question_title">Какая услуга вам необходима?</p>
+                <input type="radio" id="q_0" name="answer_1"/>
+                <label class="variant" for="q_0"><span class="border"><span class="circle"></span></span>
+                  <p>алмазная резка</p>
+                </label>
+                <input type="radio" id="q_1" name="answer_1"/>
+                <label class="variant" for="q_1"><span class="border"><span class="circle"></span></span>
+                  <p>усиление проемов</p>
+                </label>
+                <input type="radio" id="q_2" name="answer_1"/>
+                <label class="variant" for="q_2"><span class="border"><span class="circle"></span></span>
+                  <p>демонтажные работы</p>
+                </label>
+                <input type="radio" id="q_3" name="answer_1"/>
+                <label class="variant" for="q_3"><span class="border"><span class="circle"></span></span>
+                  <p>другое</p>
+                </label>
+              </div>
+              <div class="question_item question_item1">
+                <p class="question_title">С каким материалом необходимо работать?</p>
+                <input type="radio" id="q_4" name="answer_2"/>
+                <label class="variant" for="q_4"><span class="border"><span class="circle"></span></span>
+                  <p>бетон</p>
+                </label>
+                <input type="radio" id="q_5" name="answer_2"/>
+                <label class="variant" for="q_5"><span class="border"><span class="circle"></span></span>
+                  <p>железобетон</p>
+                </label>
+                <input type="radio" id="q_6" name="answer_2"/>
+                <label class="variant" for="q_6"><span class="border"><span class="circle"></span></span>
+                  <p>кирпич</p>
+                </label>
+                <input type="radio" id="q_7" name="answer_2"/>
+                <label class="variant" for="q_7"><span class="border"><span class="circle"></span></span>
+                  <p>другое</p>
+                </label>
+              </div>
+              <div class="question_item question_item2">
+                <p class="question_title">Как будет производится оплата?</p>
+                <input type="radio" id="q_8" name="answer_3"/>
+                <label class="variant" for="q_8"><span class="border"><span class="circle"></span></span>
+                  <p>Наличный расчёт</p>
+                </label>
+                <input type="radio" id="q_9" name="answer_3"/>
+                <label class="variant" for="q_9"><span class="border"><span class="circle"></span></span>
+                  <p>Безналичный расчёт без НДС</p>
+                </label>
+                <input type="radio" id="q_10" name="answer_3"/>
+                <label class="variant" for="q_10"><span class="border"><span class="circle"></span></span>
+                  <p>Безналичный расчёт с  НДС 20%</p>
+                </label>
+              </div>
+              <div class="question_item question_item3">
+                <p class="question_title">Когда необходимо выйти на объект?</p>
+                <input type="radio" id="q_11" name="answer_4"/>
+                <label class="variant" for="q_11"><span class="border"><span class="circle"></span></span>
+                  <p>сегодня</p>
+                </label>
+                <input type="radio" id="q_12" name="answer_4"/>
+                <label class="variant" for="q_12"><span class="border"><span class="circle"></span></span>
+                  <p>завтра</p>
+                </label>
+                <input type="radio" id="q_13" name="answer_4"/>
+                <label class="variant" for="q_13"><span class="border"><span class="circle"></span></span>
+                  <p>на этой неделе</p>
+                </label>
+                <input type="radio" id="q_14" name="answer_4"/>
+                <label class="variant" for="q_14"><span class="border"><span class="circle"></span></span>
+                  <p>в этом месяце</p>
+                </label>
+                <input type="radio" id="q_15" name="answer_4"/>
+                <label class="variant" for="q_15"><span class="border"><span class="circle"></span></span>
+                  <p>другое</p>
+                </label>
+              </div>
+              <div class="question_item question_item4">
+                <p class="question_title">Где территориально находится объект?</p>
+                <input type="radio" id="q_16" name="answer_5"/>
+                <label class="variant" for="q_16"><span class="border"><span class="circle"></span></span>
+                  <p>Москва</p>
+                </label>
+                <input type="radio" id="q_17" name="answer_5"/>
+                <label class="variant" for="q_17"><span class="border"><span class="circle"></span></span>
+                  <p>МО</p>
+                </label>
+              </div>
+              <div class="question_item question_item5">
+                <div class="quiz_end_hat">
+                  <p class="title">Оставьте свои данные на специалист свяжется с вами и<br>рассчитает стоимсость работ на вашем объекте</p>
+                  <div class="pp2"><i>Зафиксируем цену со скидкой </i>с <b id="time7"></b> до <b id="time8"></b></div>
+                </div>
+                <div class="quiz_end">
+                  <input class="input" type="text" name="name" placeholder="Имя"/>
+                  <input class="input" type="tel" name="phone" placeholder="Телефон"/>
+                  <input class="button" type="submit" value="Отправить"/>
+                </div>
+              </div>
+            </div>
+            <div class="navigation">
+              <button class="prev" type="button">Назад</button>
+              <button class="next" type="button" disabled="disabled">Далее<img src="img/arrow_white.svg" alt=""/></button>
+            </div>
+          </form>
+        </div>
+        <div class="popup_info popup"><img class="x" src="img/x.svg" alt="x"/>
+          <div class="popup_info_wrapper">
+            <div class="text_block">
+              <p class="title"></p>
+              <div class="text">Работаем только на высококачественном и мощном, современном оборудовании марок Hilti и Stihl Мы ценим каждого клиента, независимо от объема работ, и одинаково внимательно подходим к каждому заказу. Работаем только на высококачественном и мощном, современном оборудовании марок Hilti и Stihl Мы ценим каждого клиента, независимо от объема работ, и одинаково внимательно подходим к каждому заказу</div>
+            </div>
+            <div class="image_block"><img src="img/company_photo.png" alt="company_photo"/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
