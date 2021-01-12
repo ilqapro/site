@@ -23,11 +23,24 @@ $(function() {
     if( popup_name == "popup_info" ) {
       $('.popup_info_wrapper .title').text($(this).data('title'))
       $('.popup_info_wrapper .image_block img').attr('src', $(this).data('image_src'))
+      $('.popup_info_wrapper .seo_text').html($(this).data('text'))
+    }
+    if( popup_name == "popup_diploma" ) {
+      $('.popup_diploma_wrapper img').attr('src', $(this).data('image_src'))
     }
   })
-  $('.popup .x, .popups_bg').click(function() {
+  $('.x, .popups_bg').click(function() {
     $('.popups, .popup').fadeOut(300)
   })
+  
+  if( window.innerWidth <= 576 ) {
+    $('.hat_bottom .x, .hat_bottom a').click(function() {
+      $('.hat_bottom').fadeOut(300)
+    })
+    $('.burger').click(function() {
+      $('.hat_bottom').fadeIn(300).css('display', 'flex')
+    })
+  }
   
   // popup quiz
   function start_quiz() {
